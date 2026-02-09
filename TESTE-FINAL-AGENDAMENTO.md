@@ -33,7 +33,7 @@ Agora a API:
 Copie e execute (com um ID de serviço válido):
 
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Final Corrigido",
@@ -80,7 +80,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 
 ### 1. Teste outro horário:
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Dia 19",
@@ -97,7 +97,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 
 ### 2. Teste via Dashboard:
 ```
-1. Acesse: https://vincibarbearia.vercel.app/dashboard/agendamentos
+1. Acesse: https://vincifbzbarbearia.vercel.app/dashboard/agendamentos
 2. Clique: "Novo Agendamento"
 3. Preencha os dados
 4. Clique: "Criar Agendamento"
@@ -139,7 +139,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 ### Caso 3: Outro erro
 Execute o endpoint de debug:
 ```bash
-curl https://vincibarbearia.vercel.app/api/debug/servicos
+curl https://vincifbzbarbearia.vercel.app/api/debug/servicos
 ```
 
 E me envie o erro completo.

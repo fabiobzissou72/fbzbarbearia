@@ -53,7 +53,7 @@ Substitua `SEU_TOKEN_AQUI` pelo seu token real.
 
 #### Exemplo CURL - Um serviço:
 ```bash
-curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
+curl -X POST https://fbzbarbearia.vercel.app/api/agendamentos/criar \ \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
   -H "Content-Type: application/json" \
   -d '{
@@ -68,7 +68,7 @@ curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
 
 #### Exemplo CURL - Múltiplos serviços (Corte + Barba + Sobrancelha):
 ```bash
-curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
+curl -X POST https://fbzbarbearia.vercel.app/api/agendamentos/criar \ \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
   -H "Content-Type: application/json" \
   -d '{
@@ -120,19 +120,19 @@ curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
 
 #### Exemplo CURL - Todos:
 ```bash
-curl -X GET https://barbearia.vercel.app/api/agendamentos \
+curl -X GET https://fbzbarbearia.vercel.app/api/agendamentos \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
 #### Exemplo CURL - Por data:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/agendamentos?data=20/12/2025" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/agendamentos?data=20/12/2025" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
 #### Exemplo CURL - Por barbeiro:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/agendamentos?profissional_id=8f5e2c4a-1234-5678-9abc-def012345678" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/agendamentos?profissional_id=8f5e2c4a-1234-5678-9abc-def012345678" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -187,7 +187,7 @@ curl -X GET "https://barbearia.vercel.app/api/agendamentos?profissional_id=8f5e2
 
 #### Exemplo CURL:
 ```bash
-curl -X PUT https://barbearia.vercel.app/api/agendamentos \
+curl -X PUT https://fbzbarbearia.vercel.app/api/agendamentos \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H "Content-Type: application/json" \
@@ -206,7 +206,7 @@ curl -X PUT https://barbearia.vercel.app/api/agendamentos \
 
 #### Exemplo CURL:
 ```bash
-curl -X DELETE "https://barbearia.vercel.app/api/agendamentos?id=8f5e2c4a-1234-5678-9abc-def012345678" \
+curl -X DELETE "https://fbzbarbearia.vercel.app/api/agendamentos?id=8f5e2c4a-1234-5678-9abc-def012345678" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -225,19 +225,19 @@ curl -X DELETE "https://barbearia.vercel.app/api/agendamentos?id=8f5e2c4a-1234-5
 
 #### Exemplo CURL - Horários livres do dia:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
 #### Exemplo CURL - Horários para barbeiro específico:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&barbeiro=Hiago" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&barbeiro=Hiago" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
 #### Exemplo CURL - Com múltiplos serviços:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&servico_ids=uuid1,uuid2,uuid3" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&servico_ids=uuid1,uuid2,uuid3" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -283,7 +283,7 @@ curl -X GET "https://barbearia.vercel.app/api/agendamentos/horarios-disponiveis?
 
 #### Exemplo CURL:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/agendamentos/buscar-barbeiro-rodizio?data=2025-12-20&hora=14:30&duracao=60" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/agendamentos/buscar-barbeiro-rodizio?data=2025-12-20&hora=14:30&duracao=60" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -328,7 +328,7 @@ curl -X GET "https://barbearia.vercel.app/api/agendamentos/buscar-barbeiro-rodiz
 
 #### Exemplo CURL - Cancelamento por cliente:
 ```bash
-curl -X DELETE https://barbearia.vercel.app/api/agendamentos/cancelar \
+curl -X DELETE https://fbzbarbearia.vercel.app/api/agendamentos/cancelar \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H "Content-Type: application/json" \
@@ -341,7 +341,7 @@ curl -X DELETE https://barbearia.vercel.app/api/agendamentos/cancelar \
 
 #### Exemplo CURL - Cancelamento por admin (forçado):
 ```bash
-curl -X DELETE https://barbearia.vercel.app/api/agendamentos/cancelar \
+curl -X DELETE https://fbzbarbearia.vercel.app/api/agendamentos/cancelar \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H "Content-Type: application/json" \
@@ -406,7 +406,7 @@ curl -X DELETE https://barbearia.vercel.app/api/agendamentos/cancelar \
 
 #### Exemplo CURL - Cliente compareceu:
 ```bash
-curl -X POST https://barbearia.vercel.app/api/agendamentos/confirmar-comparecimento \
+curl -X POST https://fbzbarbearia.vercel.app/api/agendamentos/confirmar-comparecimento \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H "Content-Type: application/json" \
@@ -418,7 +418,7 @@ curl -X POST https://barbearia.vercel.app/api/agendamentos/confirmar-comparecime
 
 #### Exemplo CURL - Cliente faltou:
 ```bash
-curl -X POST https://barbearia.vercel.app/api/agendamentos/confirmar-comparecimento \
+curl -X POST https://fbzbarbearia.vercel.app/api/agendamentos/confirmar-comparecimento \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H "Content-Type: application/json" \
@@ -442,7 +442,7 @@ curl -X POST https://barbearia.vercel.app/api/agendamentos/confirmar-comparecime
 
 #### Exemplo CURL:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/clientes/meus-agendamentos?telefone=11999999999" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/clientes/meus-agendamentos?telefone=11999999999" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -481,7 +481,7 @@ curl -X GET "https://barbearia.vercel.app/api/clientes/meus-agendamentos?telefon
 
 #### Exemplo CURL:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/barbeiros/agendamentos-hoje?telefone=11988888888" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/barbeiros/agendamentos-hoje?telefone=11988888888" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -523,7 +523,7 @@ curl -X GET "https://barbearia.vercel.app/api/barbeiros/agendamentos-hoje?telefo
 
 #### Exemplo CURL:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/barbeiros/agendamentos-semana?telefone=11988888888" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/barbeiros/agendamentos-semana?telefone=11988888888" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -538,7 +538,7 @@ curl -X GET "https://barbearia.vercel.app/api/barbeiros/agendamentos-semana?tele
 
 #### Exemplo CURL:
 ```bash
-curl -X GET "https://barbearia.vercel.app/api/barbeiros/faturamento-mes?telefone=11988888888" \
+curl -X GET "https://fbzbarbearia.vercel.app/api/barbeiros/faturamento-mes?telefone=11988888888" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
@@ -569,7 +569,7 @@ curl -X GET "https://barbearia.vercel.app/api/barbeiros/faturamento-mes?telefone
 
 #### Exemplo CURL:
 ```bash
-curl -X GET https://barbearia.vercel.app/api/barbeiros/listar \
+curl -X GET https://fbzbarbearia.vercel.app/api/barbeiros/listar \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI'
 ```
@@ -601,7 +601,7 @@ curl -X GET https://barbearia.vercel.app/api/barbeiros/listar \
 
 #### Exemplo CURL:
 ```bash
-curl -X GET https://barbearia.vercel.app/api/servicos \
+curl -X GET https://fbzbarbearia.vercel.app/api/servicos \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI'
 ```
@@ -644,15 +644,15 @@ curl -X GET https://barbearia.vercel.app/api/servicos \
 
 ```bash
 # 1. Listar serviços disponíveis
-curl -X GET https://barbearia.vercel.app/api/servicos \
+curl -X GET https://fbzbarbearia.vercel.app/api/servicos \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI'
 
 # 2. Verificar horários disponíveis (considerando 90min total)
-curl -X GET "https://barbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&servico_ids=uuid-corte,uuid-barba,uuid-sobrancelha"
+curl -X GET "https://fbzbarbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&servico_ids=uuid-corte,uuid-barba,uuid-sobrancelha"
 
 # 3. Criar agendamento com os 3 serviços
-curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
+curl -X POST https://fbzbarbearia.vercel.app/api/agendamentos/criar \ \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
   -H "Content-Type: application/json" \
   -d '{
@@ -669,7 +669,7 @@ curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
 
 ```bash
 # Criar agendamento com barbeiro preferido
-curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
+curl -X POST https://fbzbarbearia.vercel.app/api/agendamentos/criar \ \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
   -H "Content-Type: application/json" \
   -d '{
@@ -686,7 +686,7 @@ curl -X POST https://barbearia.vercel.app/api/agendamentos/criar \ \
 
 ```bash
 # Admin cancela agendamento fora do prazo
-curl -X DELETE https://barbearia.vercel.app/api/agendamentos/cancelar \
+curl -X DELETE https://fbzbarbearia.vercel.app/api/agendamentos/cancelar \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H "Content-Type: application/json" \
@@ -717,7 +717,7 @@ curl -X DELETE https://barbearia.vercel.app/api/agendamentos/cancelar \
 
 #### Exemplo CURL:
 ```bash
-curl -X POST https://barbearia.vercel.app/api/clientes/enviar-senha-temporaria \
+curl -X POST https://fbzbarbearia.vercel.app/api/clientes/enviar-senha-temporaria \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_API" \
   -d '{
@@ -794,7 +794,7 @@ A API não requer autenticação para a maioria dos endpoints. Para produção, 
 
 ## 🌐 BASE URL
 
-**Desenvolvimento:** `https://barbearia.vercel.app`
+**Desenvolvimento:** `https://fbzbarbearia.vercel.app`
 **Produção:** `https://sua-api.com`
 
 ---

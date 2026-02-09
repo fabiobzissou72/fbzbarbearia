@@ -8,7 +8,7 @@
 
 ### 2️⃣ Importar Projeto
 1. Clique em **"Add New..."** → **"Project"**
-2. Selecione o repositório: **`vincibarbearia`**
+2. Selecione o repositório: **`fbzbarbearia`**
 3. Clique em **"Import"**
 
 ### 3️⃣ Configurar Variáveis de Ambiente ⚠️ IMPORTANTE
@@ -62,7 +62,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55cHV2aWN
 ### URL de Produção
 Você receberá uma URL tipo:
 ```
-https://vincibarbearia.vercel.app
+https://vincifbzbarbearia.vercel.app
 ```
 
 ### ⚙️ Configurações Importantes
@@ -80,7 +80,7 @@ https://SEU-DOMINIO.vercel.app/api/agendamentos/criar
 #### 3. CORS no Supabase
 Adicione sua URL da Vercel nas configurações do Supabase:
 1. Acesse Supabase → Authentication → URL Configuration
-2. Adicione: `https://vincibarbearia.vercel.app`
+2. Adicione: `https://vincifbzbarbearia.vercel.app`
 
 ---
 
@@ -116,7 +116,7 @@ Cada vez que você fizer `git push` para o GitHub, a Vercel vai:
 Agora seu sistema Vince Barbearia está no ar e acessível de qualquer lugar! 🎉
 
 **URLs importantes:**
-- 🌐 Frontend: `https://vincibarbearia.vercel.app`
-- 🔐 Login: `https://vincibarbearia.vercel.app/login`
-- 📊 Dashboard: `https://vincibarbearia.vercel.app/dashboard`
-- 🔌 API: `https://vincibarbearia.vercel.app/api/*`
+- 🌐 Frontend: `https://vincifbzbarbearia.vercel.app`
+- 🔐 Login: `https://vincifbzbarbearia.vercel.app/login`
+- 📊 Dashboard: `https://vincifbzbarbearia.vercel.app/dashboard`
+- 🔌 API: `https://vincifbzbarbearia.vercel.app/api/*`

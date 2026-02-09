@@ -1,4 +1,4 @@
-# 📚 DOCUMENTAÇÃO COMPLETA - API VINCI BARBEARIA
+# 📚 DOCUMENTAÇÃO COMPLETA - API FBZ Barbearia
 
 **Data:** 11/12/2025
 **Versão:** 1.0
@@ -698,19 +698,19 @@ curl https://seu-dominio.vercel.app/api/barbeiros/listar?ativo=false
 **Exemplo de Uso:**
 ```bash
 # Buscar lembretes de amanhã
-curl https://barbearia.vercel.app/api/lembretes?tipo=amanha
+curl https://fbzbarbearia.vercel.app/api/lembretes?tipo=amanha
 
 # Buscar lembretes de hoje
-curl https://barbearia.vercel.app/api/lembretes?tipo=hoje
+curl https://fbzbarbearia.vercel.app/api/lembretes?tipo=hoje
 
 # Buscar lembretes de 1 hora antes
-curl https://barbearia.vercel.app/api/lembretes?tipo=1hora
+curl https://fbzbarbearia.vercel.app/api/lembretes?tipo=1hora
 ```
 
 **Configuração N8N Cron:**
 ```
 Schedule: 0 18 * * * (todo dia às 18h para "amanha")
-URL: GET https://barbearia.vercel.app/api/lembretes?tipo=amanha
+URL: GET https://fbzbarbearia.vercel.app/api/lembretes?tipo=amanha
 Authentication: None (sem autenticação)
 ```
 
@@ -856,7 +856,7 @@ Query: barbeiro_nome={{$node["WhatsApp Trigger"].json["nome"]}}&periodo=hoje
 
 2. **HTTP Request:**
    - Method: `GET`
-   - URL: `https://barbearia.vercel.app/api/lembretes?tipo=amanha`
+   - URL: `https://fbzbarbearia.vercel.app/api/lembretes?tipo=amanha`
    - Authentication: `None`
 
 3. **Loop Over Items:**
@@ -878,7 +878,7 @@ Query: barbeiro_nome={{$node["WhatsApp Trigger"].json["nome"]}}&periodo=hoje
    ✂️ Serviço: {{$item.servico}}
    💵 Valor: R$ {{$item.valor}}
 
-   📍 Vinci Barbearia
+   📍 FBZ Barbearia
 
    Se não puder comparecer, por favor,
    avise com antecedência!

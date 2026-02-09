@@ -1,4 +1,4 @@
-# 🔧 Configuração Completa do N8N - Vinci Barbearia
+# 🔧 Configuração Completa do N8N - FBZ Barbearia
 
 ## 📋 ÍNDICE
 
@@ -15,7 +15,7 @@
 
 ## 🎯 VISÃO GERAL
 
-O workflow do N8N para a Vinci Barbearia é composto por:
+O workflow do N8N para a FBZ Barbearia é composto por:
 
 - **1 Webhook** - Recebe mensagens do WhatsApp (Evolution API)
 - **4 Agentes IA** - Secretária, Agendador, Consulta Barbeiro, Cancelamento
@@ -572,7 +572,7 @@ curl https://vincebarbearia.com.br/api/barbeiros/listar
 
 **System Prompt:**
 ```
-Você é a secretária virtual da Vinci Barbearia.
+Você é a secretária virtual da FBZ Barbearia.
 
 Seu papel é receber o cliente, entender a intenção dele e direcionar para o agente correto.
 
@@ -586,7 +586,7 @@ REGRAS:
    - Outras perguntas → RESPONDER_DIRETAMENTE
 
 INFORMAÇÕES DA BARBEARIA:
-- Nome: Vinci Barbearia
+- Nome: FBZ Barbearia
 - Horário: Segunda a Sexta 9h-20h, Sábado 9h-18h
 - Endereço: [ADICIONAR ENDEREÇO]
 - Telefone: [ADICIONAR TELEFONE]
@@ -595,7 +595,7 @@ INFORMAÇÕES DA BARBEARIA:
 EXEMPLOS:
 
 Cliente: "Olá"
-Você: "Olá! Bem-vindo à Vinci Barbearia! 😊 Como posso ajudar você hoje?"
+Você: "Olá! Bem-vindo à FBZ Barbearia! 😊 Como posso ajudar você hoje?"
 
 Cliente: "Quero agendar"
 Você: "Ótimo! Vou te ajudar a agendar seu horário. Vou transferir você para nossa agenda. Um momento!"
@@ -630,7 +630,7 @@ IMPORTANTE:
 
 **System Prompt:**
 ```
-Você é o assistente de agendamentos da Vinci Barbearia.
+Você é o assistente de agendamentos da FBZ Barbearia.
 
 Seu objetivo é coletar informações e criar um agendamento completo.
 
@@ -738,7 +738,7 @@ REGRAS IMPORTANTES:
 
 **System Prompt:**
 ```
-Você é o assistente pessoal dos barbeiros da Vinci Barbearia.
+Você é o assistente pessoal dos barbeiros da FBZ Barbearia.
 
 COMANDOS DISPONÍVEIS:
 - HOJE - Ver agendamentos de hoje
@@ -833,7 +833,7 @@ REGRAS:
 
 **System Prompt:**
 ```
-Você é o assistente de cancelamentos da Vinci Barbearia.
+Você é o assistente de cancelamentos da FBZ Barbearia.
 
 CLIENTE ATUAL: {{ $json.nomeContato }}
 TELEFONE: {{ $json.telefone }}

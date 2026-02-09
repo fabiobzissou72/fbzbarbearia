@@ -70,7 +70,7 @@ WHERE nome ILIKE '%corte%' AND ativo = true;
 
 **Ou use a API de debug:**
 ```bash
-curl https://vincibarbearia.vercel.app/api/debug/servicos
+curl https://vincifbzbarbearia.vercel.app/api/debug/servicos
 ```
 
 ---
@@ -79,7 +79,7 @@ curl https://vincibarbearia.vercel.app/api/debug/servicos
 
 ### Passo 1: Criar agendamento via API
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Dashboard Automático",
@@ -91,7 +91,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 ```
 
 ### Passo 2: Verificar dashboard
-1. Abra: https://vincibarbearia.vercel.app/dashboard/agendamentos
+1. Abra: https://vincifbzbarbearia.vercel.app/dashboard/agendamentos
 2. **Aguarde até 10 segundos**
 3. ✅ O agendamento aparece automaticamente!
 
@@ -136,7 +136,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 Execute este comando para listar todos os serviços e seus valores:
 
 ```bash
-curl https://vincibarbearia.vercel.app/api/debug/servicos
+curl https://vincifbzbarbearia.vercel.app/api/debug/servicos
 ```
 
 **Exemplo de resposta:**
@@ -191,7 +191,7 @@ curl https://vincibarbearia.vercel.app/api/debug/servicos
 3. Verifique se está no filtro de data correto
 
 ### Valor do serviço errado:
-1. Execute: `curl https://vincibarbearia.vercel.app/api/debug/servicos`
+1. Execute: `curl https://vincifbzbarbearia.vercel.app/api/debug/servicos`
 2. Me envie a resposta
 3. Me diga quais valores estão errados
 

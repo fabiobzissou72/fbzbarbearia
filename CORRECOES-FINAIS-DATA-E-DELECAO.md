@@ -18,7 +18,7 @@
 **Como usar:**
 ```bash
 # Formato brasileiro (RECOMENDADO)
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Final",
@@ -29,7 +29,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
   }'
 
 # Formato ISO (também funciona)
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Final",
@@ -61,7 +61,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 - ✅ Logs de debug adicionados para troubleshooting
 
 **Como verificar:**
-1. Abra o dashboard: https://vincibarbearia.vercel.app/dashboard/agendamentos
+1. Abra o dashboard: https://vincifbzbarbearia.vercel.app/dashboard/agendamentos
 2. Clique no botão **"Calendário"** no topo
 3. ✅ Os agendamentos aparecem nos dias corretos!
 
@@ -104,7 +104,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 
 ### Teste 1: Criar agendamento com formato DD-MM-YYYY
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "João Silva",
@@ -123,7 +123,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 ---
 
 ### Teste 2: Verificar dashboard
-1. Abra: https://vincibarbearia.vercel.app/dashboard/agendamentos
+1. Abra: https://vincifbzbarbearia.vercel.app/dashboard/agendamentos
 2. **Aguarde até 10 segundos**
 3. ✅ Agendamento aparece na lista com data "15/12/2025"
 

@@ -62,7 +62,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55cHV2aWN
 ### URL de Produção
 Você receberá uma URL tipo:
 ```
-https://barbearia.vercel.app
+https://fbzbarbearia.vercel.app
 ```
 
 ### ⚙️ Configurações Importantes
@@ -80,7 +80,7 @@ https://SEU-DOMINIO.vercel.app/api/agendamentos/criar
 #### 3. CORS no Supabase
 Adicione sua URL da Vercel nas configurações do Supabase:
 1. Acesse Supabase → Authentication → URL Configuration
-2. Adicione: `https://barbearia.vercel.app`
+2. Adicione: `https://fbzbarbearia.vercel.app`
 
 ---
 
@@ -116,7 +116,7 @@ Cada vez que você fizer `git push` para o GitHub, a Vercel vai:
 Agora seu sistema Vince Barbearia está no ar e acessível de qualquer lugar! 🎉
 
 **URLs importantes:**
-- 🌐 Frontend: `https://barbearia.vercel.app`
-- 🔐 Login: `https://barbearia.vercel.app/login`
-- 📊 Dashboard: `https://barbearia.vercel.app/dashboard`
-- 🔌 API: `https://barbearia.vercel.app/api/*`
+- 🌐 Frontend: `https://fbzbarbearia.vercel.app`
+- 🔐 Login: `https://fbzbarbearia.vercel.app/login`
+- 📊 Dashboard: `https://fbzbarbearia.vercel.app/dashboard`
+- 🔌 API: `https://fbzbarbearia.vercel.app/api/*`

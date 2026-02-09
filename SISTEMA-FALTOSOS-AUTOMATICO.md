@@ -59,7 +59,7 @@ Abra o SQL Editor do Supabase e execute para ver:
 ### 2. Testar o Endpoint (Executar agora)
 
 ```bash
-curl "https://vincibarbearia.vercel.app/api/cron/marcar-faltosos"
+curl "https://vincifbzbarbearia.vercel.app/api/cron/marcar-faltosos"
 ```
 
 **Resposta esperada:**
@@ -103,7 +103,7 @@ Crie um novo workflow só para faltosos:
 
 **Nó 2: HTTP Request**
 - Method: GET
-- URL: `https://vincibarbearia.vercel.app/api/cron/marcar-faltosos`
+- URL: `https://vincifbzbarbearia.vercel.app/api/cron/marcar-faltosos`
 
 **JSON do Workflow:**
 ```json
@@ -129,7 +129,7 @@ Crie um novo workflow só para faltosos:
     {
       "parameters": {
         "method": "GET",
-        "url": "https://vincibarbearia.vercel.app/api/cron/marcar-faltosos",
+        "url": "https://vincifbzbarbearia.vercel.app/api/cron/marcar-faltosos",
         "options": {}
       },
       "name": "Marcar Faltosos",
@@ -255,7 +255,7 @@ Resultado: ⏰ Não processa (ainda não chegou a hora)
 Execute o curl agora para testar:
 
 ```bash
-curl "https://vincibarbearia.vercel.app/api/cron/marcar-faltosos"
+curl "https://vincifbzbarbearia.vercel.app/api/cron/marcar-faltosos"
 ```
 
 Configure no N8N e nunca mais se preocupe com agendamentos "fantasma"! 🎉

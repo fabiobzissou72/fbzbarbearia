@@ -1,4 +1,4 @@
-# 📚 Documentações - Vinci Barbearia
+# 📚 Documentações - FBZ Barbearia
 
 Bem-vindo à central de documentações do projeto!
 

@@ -1,4 +1,4 @@
-# 📁 Organização do Projeto - Vinci Barbearia
+# 📁 Organização do Projeto - FBZ Barbearia
 
 ## 📊 Estrutura de Pastas
 

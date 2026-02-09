@@ -287,7 +287,7 @@ Busque por:
 ### Exemplo de Prompt para o Agente
 
 ```
-Você é um assistente da Vinci Barbearia.
+Você é um assistente da FBZ Barbearia.
 
 HISTÓRICO DO CLIENTE:
 Nome: João Silva

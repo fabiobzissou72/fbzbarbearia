@@ -187,7 +187,7 @@ const mensagem = `❌ Olá ${cliente}, seu agendamento de ${data} às ${hora} ` 
 
 ### Mensagem com Link Direto
 ```javascript
-const linkApp = `https://app.vincibarbearia.com.br/agendar`;
+const linkApp = `https://app.fbzbarbearia.com.br/agendar`;
 
 const mensagem = `❌ *Cancelamento*\n\n` +
   `Olá ${cliente}!\n\n` +

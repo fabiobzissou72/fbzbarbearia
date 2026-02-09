@@ -1,4 +1,4 @@
-# 🗄️ Scripts SQL - Vinci Barbearia
+# 🗄️ Scripts SQL - FBZ Barbearia
 
 Scripts SQL organizados por categoria.
 

@@ -1,6 +1,6 @@
 -- =====================================================
 -- CORREÇÃO: Upload de Fotos dos Barbeiros
--- VINCI BARBEARIA
+-- FBZ Barbearia
 -- =====================================================
 --
 -- Este script corrige o erro:

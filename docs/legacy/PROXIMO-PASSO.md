@@ -1,4 +1,4 @@
-# 🚀 PRÓXIMOS PASSOS - VINCI BARBEARIA
+# 🚀 PRÓXIMOS PASSOS - FBZ Barbearia
 
 **Data:** 12/12/2025
 **Último Commit:** `7fefd5a` - "MEGA UPDATE: Novas APIs + Responsividade 100% + Autenticação"

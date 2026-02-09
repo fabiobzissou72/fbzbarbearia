@@ -59,7 +59,7 @@ const getDataBrasiliaISO = () => {
 
 1. Crie um agendamento para **HOJE** (11/12/2025):
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Timezone",
@@ -70,7 +70,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
   }'
 ```
 
-2. Abra o dashboard: https://vincibarbearia.vercel.app/dashboard/agendamentos
+2. Abra o dashboard: https://vincifbzbarbearia.vercel.app/dashboard/agendamentos
 3. Clique no filtro **"Hoje"**
 4. ✅ **O agendamento deve aparecer imediatamente!**
 

@@ -31,7 +31,7 @@ A tabela `movimentos_financeiros` registra **automaticamente** cada movimento fi
 
 1. No menu lateral, clique em **SQL Editor** (ícone `</>`)
 2. Clique em **+ New Query**
-3. Abra o arquivo: `D:\VINCI BARBEARIA\src\lib\movimentos-financeiros.sql`
+3. Abra o arquivo: `D:\FBZ Barbearia\src\lib\movimentos-financeiros.sql`
 4. **Copie TODO o conteúdo** do arquivo (Ctrl+A, Ctrl+C)
 5. **Cole** no editor SQL do Supabase (Ctrl+V)
 6. Clique em **RUN** (ou pressione `Ctrl+Enter`)

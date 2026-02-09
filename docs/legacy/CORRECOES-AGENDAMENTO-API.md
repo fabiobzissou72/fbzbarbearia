@@ -88,7 +88,7 @@ ORDER BY nome;
 
 **Ou use a API de debug:**
 ```bash
-curl https://vincibarbearia.vercel.app/api/debug/servicos
+curl https://vincifbzbarbearia.vercel.app/api/debug/servicos
 ```
 
 **Para corrigir valores:**
@@ -107,7 +107,7 @@ WHERE nome = 'Corte' AND ativo = true;
 
 ### Teste 1: Criar agendamento via API
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Automático",
@@ -127,7 +127,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 
 ### Teste 2: Verificar atualização automática do dashboard
 
-1. Abra o dashboard: `https://vincibarbearia.vercel.app/dashboard/agendamentos`
+1. Abra o dashboard: `https://vincifbzbarbearia.vercel.app/dashboard/agendamentos`
 2. Crie um agendamento via API (use o curl acima)
 3. **Aguarde até 10 segundos**
 4. ✅ O novo agendamento aparece automaticamente (sem F5!)

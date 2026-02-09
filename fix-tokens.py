@@ -46,7 +46,7 @@ curls_to_fix = [
     ('curl -X GET http://localhost:3000/api/barbeiros/listar', 'curl -X GET http://localhost:3000/api/barbeiros/listar \\\n  -H \'Authorization: Bearer SEU_TOKEN_AQUI\''),
     ('curl -X GET http://localhost:3000/api/servicos', 'curl -X GET http://localhost:3000/api/servicos \\\n  -H \'Authorization: Bearer SEU_TOKEN_AQUI\''),
     ('curl -X POST http://localhost:3000/api/agendamentos/criar', 'curl -X POST http://localhost:3000/api/agendamentos/criar'),
-    ('curl -X POST https://barbearia.vercel.app/api/clientes/enviar-senha-temporaria', 'curl -X POST https://barbearia.vercel.app/api/clientes/enviar-senha-temporaria'),
+    ('curl -X POST https://fbzbarbearia.vercel.app/api/clientes/enviar-senha-temporaria', 'curl -X POST https://fbzbarbearia.vercel.app/api/clientes/enviar-senha-temporaria'),
 ]
 
 for old, new in curls_to_fix:
@@ -72,7 +72,7 @@ Substitua `SEU_TOKEN_AQUI` pelo seu token real.
 
 # Se não tem o aviso ainda, adiciona
 if '⚠️ IMPORTANTE: AUTENTICAÇÃO' not in content_new:
-    content_new = content_new.replace('# 📚 Documentação Completa da API - Vinci Barbearia', '# 📚 Documentação Completa da API - Vince Barbearia' + warning)
+    content_new = content_new.replace('# 📚 Documentação Completa da API - FBZ Barbearia', '# 📚 Documentação Completa da API - Vince Barbearia' + warning)
 
 with open('API_DOCUMENTATION.md', 'w', encoding='utf-8') as f:
     f.write(content_new)

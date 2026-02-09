@@ -42,7 +42,7 @@
 
 **Exemplo cURL:**
 ```bash
-curl -X GET 'https://barbearia.vercel.app/api/barbeiro/agendamentos?barbeiro=Hiago&quando=hoje' \
+curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiro/agendamentos?barbeiro=Hiago&quando=hoje' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI'
 ```
@@ -100,7 +100,7 @@ curl -X GET 'https://barbearia.vercel.app/api/barbeiro/agendamentos?barbeiro=Hia
 
 **Exemplo cURL:**
 ```bash
-curl -X GET 'https://barbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=hoje' \
+curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=hoje' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI'
 ```
@@ -151,7 +151,7 @@ curl -X GET 'https://barbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro
 
 **Exemplo cURL:**
 ```bash
-curl -X GET 'https://barbearia.vercel.app/api/barbeiros/faturamento-mes?barbeiro_nome=Hiago&mes=01&ano=2026' \
+curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiros/faturamento-mes?barbeiro_nome=Hiago&mes=01&ano=2026' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI'
 ```
@@ -238,7 +238,7 @@ curl -X GET 'https://barbearia.vercel.app/api/barbeiros/faturamento-mes?barbeiro
 
 **Exemplo cURL (Forma 1 - Recomendada):**
 ```bash
-curl -X POST 'https://barbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
+curl -X POST 'https://fbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Content-Type: application/json' \
@@ -249,7 +249,7 @@ curl -X POST 'https://barbearia.vercel.app/api/barbeiros/cancelar-meu-agendament
 
 **Exemplo cURL (Forma 2 - Compatibilidade):**
 ```bash
-curl -X POST 'https://barbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
+curl -X POST 'https://fbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI' \
   -H 'Content-Type: application/json' \
@@ -293,7 +293,7 @@ curl -X POST 'https://barbearia.vercel.app/api/barbeiros/cancelar-meu-agendament
 
 **Exemplo cURL:**
 ```bash
-curl -X GET 'https://barbearia.vercel.app/api/barbeiros/horarios' \
+curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiros/horarios' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer SEU_TOKEN_AQUI'
 ```

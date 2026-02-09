@@ -39,7 +39,7 @@ Authorization: Bearer SEU_TOKEN_API
 **Exemplo com curl:**
 
 ```bash
-curl -X POST https://barbearia.vercel.app/api/barbeiros/configurar-webhook \
+curl -X POST https://fbzbarbearia.vercel.app/api/barbeiros/configurar-webhook \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN" \
   -d '{

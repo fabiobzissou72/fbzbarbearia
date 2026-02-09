@@ -18,7 +18,7 @@ export const dynamic = 'force-dynamic'
  *
  * **Exemplo de uso:**
  * ```bash
- * curl -X DELETE 'https://barbearia.vercel.app/api/clientes/deletar' \
+ * curl -X DELETE 'https://fbzbarbearia.vercel.app/api/clientes/deletar' \
  *   -H 'Authorization: Bearer SEU_TOKEN' \
  *   -H 'Content-Type: application/json' \
  *   -d '{
@@ -28,7 +28,7 @@ export const dynamic = 'force-dynamic'
  *
  * **Ou usando telefone:**
  * ```bash
- * curl -X DELETE 'https://barbearia.vercel.app/api/clientes/deletar' \
+ * curl -X DELETE 'https://fbzbarbearia.vercel.app/api/clientes/deletar' \
  *   -H 'Authorization: Bearer SEU_TOKEN' \
  *   -H 'Content-Type: application/json' \
  *   -d '{

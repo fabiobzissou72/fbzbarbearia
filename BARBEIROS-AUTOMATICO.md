@@ -1,4 +1,4 @@
-# 🤖 Sistema Automático de Barbeiros - Vinci Barbearia
+# 🤖 Sistema Automático de Barbeiros - FBZ Barbearia
 
 ## 🎯 RESPOSTA À SUA PERGUNTA
 

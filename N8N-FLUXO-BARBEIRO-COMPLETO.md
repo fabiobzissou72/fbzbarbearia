@@ -30,7 +30,7 @@ Busca informações do barbeiro pelo telefone.
 **Node: HTTP Request**
 ```
 Método: GET
-URL: https://vincibarbearia.vercel.app/api/barbeiros/listar
+URL: https://vincifbzbarbearia.vercel.app/api/barbeiros/listar
 ```
 
 **Code Node (Extrair Barbeiro):**
@@ -163,7 +163,7 @@ Condição: {{ $json.intencao }}
 ### HTTP Request - Consultar
 ```
 Método: GET
-URL: https://vincibarbearia.vercel.app/api/barbeiro/agendamentos
+URL: https://vincifbzbarbearia.vercel.app/api/barbeiro/agendamentos
 Query Parameters:
   - barbeiro: {{ $node["Identificar Barbeiro"].json["barbeiro_id"] }}
   - quando: {{ $node["Analisar Intenção"].json["quando"] }}
@@ -226,7 +226,7 @@ return {
 **HTTP Request - Cancelar (com botão):**
 ```
 Método: POST
-URL: https://vincibarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
+URL: https://vincifbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
 Body:
 {
   "agendamento_id": "{{ $json.button_data.split('_')[1] }}"
@@ -267,7 +267,7 @@ return {
 **⭐ FORMA 1 - RECOMENDADA (Usando ID do agendamento):**
 ```
 Método: POST
-URL: https://vincibarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
+URL: https://vincifbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
 Headers:
   - Content-Type: application/json
 Body (JSON):
@@ -279,7 +279,7 @@ Body (JSON):
 **FORMA 2 - ALTERNATIVA (Usando nome e hora):**
 ```
 Método: POST
-URL: https://vincibarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
+URL: https://vincifbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
 Headers:
   - Content-Type: application/json
 Body (JSON):

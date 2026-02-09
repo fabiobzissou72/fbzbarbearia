@@ -1,4 +1,4 @@
-# 🤖 Guia Completo N8N - Vinci Barbearia
+# 🤖 Guia Completo N8N - FBZ Barbearia
 
 ## 📋 ÍNDICE
 
@@ -176,7 +176,7 @@ Authentication: Header Auth
 Body Parameters:
 {
   "number": "{{ $json.cliente.telefone }}",
-  "text": "Olá {{ $json.cliente.nome }}! 👋\n\n✅ *Seu agendamento foi confirmado!*\n\n📅 *Data:* {{ $json.agendamento.data }}\n⏰ *Horário:* {{ $json.agendamento.hora }}\n💈 *Barbeiro:* {{ $json.agendamento.barbeiro }}\n💰 *Valor:* R$ {{ $json.agendamento.valor_total }}\n\n📍 *Vinci Barbearia*\nNos vemos em breve! 😊"
+  "text": "Olá {{ $json.cliente.nome }}! 👋\n\n✅ *Seu agendamento foi confirmado!*\n\n📅 *Data:* {{ $json.agendamento.data }}\n⏰ *Horário:* {{ $json.agendamento.hora }}\n💈 *Barbeiro:* {{ $json.agendamento.barbeiro }}\n💰 *Valor:* R$ {{ $json.agendamento.valor_total }}\n\n📍 *FBZ Barbearia*\nNos vemos em breve! 😊"
 }
 ```
 
@@ -186,7 +186,7 @@ Body Parameters:
 Body Parameters:
 {
   "number": "{{ $json.cliente.telefone }}",
-  "text": "Oi {{ $json.cliente.nome }}! 👋\n\n⏰ *Lembrete: Amanhã é seu dia!*\n\n📅 {{ $json.agendamento.data }}\n⏰ {{ $json.agendamento.hora }}\n💈 Com {{ $json.agendamento.barbeiro }}\n\nEstamos te esperando! 😊\n\n📍 *Vinci Barbearia*"
+  "text": "Oi {{ $json.cliente.nome }}! 👋\n\n⏰ *Lembrete: Amanhã é seu dia!*\n\n📅 {{ $json.agendamento.data }}\n⏰ {{ $json.agendamento.hora }}\n💈 Com {{ $json.agendamento.barbeiro }}\n\nEstamos te esperando! 😊\n\n📍 *FBZ Barbearia*"
 }
 ```
 
@@ -196,7 +196,7 @@ Body Parameters:
 Body Parameters:
 {
   "number": "{{ $json.cliente.telefone }}",
-  "text": "🔔 *Atenção {{ $json.cliente.nome }}!*\n\nDaqui a *2 horas* é seu horário:\n\n⏰ {{ $json.agendamento.hora }}\n💈 {{ $json.agendamento.barbeiro }}\n\n📍 Vinci Barbearia\nNão esqueça! 😊"
+  "text": "🔔 *Atenção {{ $json.cliente.nome }}!*\n\nDaqui a *2 horas* é seu horário:\n\n⏰ {{ $json.agendamento.hora }}\n💈 {{ $json.agendamento.barbeiro }}\n\n📍 FBZ Barbearia\nNão esqueça! 😊"
 }
 ```
 
@@ -206,7 +206,7 @@ Body Parameters:
 Body Parameters:
 {
   "number": "{{ $json.cliente.telefone }}",
-  "text": "Olá {{ $json.cliente.nome }},\n\n❌ Seu agendamento foi *cancelado*\n\n📅 Data: {{ $json.agendamento.data }}\n⏰ Horário: {{ $json.agendamento.hora }}\n\n{{ $json.motivo ? 'Motivo: ' + $json.motivo : '' }}\n\nPara reagendar, entre em contato conosco! 📲\n\n*Vinci Barbearia*"
+  "text": "Olá {{ $json.cliente.nome }},\n\n❌ Seu agendamento foi *cancelado*\n\n📅 Data: {{ $json.agendamento.data }}\n⏰ Horário: {{ $json.agendamento.hora }}\n\n{{ $json.motivo ? 'Motivo: ' + $json.motivo : '' }}\n\nPara reagendar, entre em contato conosco! 📲\n\n*FBZ Barbearia*"
 }
 ```
 
@@ -216,7 +216,7 @@ Body Parameters:
 Body Parameters:
 {
   "number": "{{ $json.cliente.telefone }}",
-  "text": "Olá {{ $json.cliente.nome }}! 👋\n\nComo foi seu atendimento com {{ $json.agendamento.barbeiro }}?\n\nSua opinião é muito importante! ⭐\n\nResponda:\n1️⃣ - Excelente\n2️⃣ - Bom\n3️⃣ - Regular\n4️⃣ - Ruim\n\n*Vinci Barbearia*"
+  "text": "Olá {{ $json.cliente.nome }}! 👋\n\nComo foi seu atendimento com {{ $json.agendamento.barbeiro }}?\n\nSua opinião é muito importante! ⭐\n\nResponda:\n1️⃣ - Excelente\n2️⃣ - Bom\n3️⃣ - Regular\n4️⃣ - Ruim\n\n*FBZ Barbearia*"
 }
 ```
 
@@ -226,7 +226,7 @@ Body Parameters:
 Body Parameters:
 {
   "number": "{{ $json.cliente.telefone }}",
-  "text": "E aí {{ $json.cliente.nome }}! 😊\n\nJá faz um tempinho né?\n\n✂️ Que tal agendar um novo corte?\n\nTemos horários disponíveis essa semana!\n\nResponda *SIM* para ver os horários.\n\n*Vinci Barbearia*"
+  "text": "E aí {{ $json.cliente.nome }}! 😊\n\nJá faz um tempinho né?\n\n✂️ Que tal agendar um novo corte?\n\nTemos horários disponíveis essa semana!\n\nResponda *SIM* para ver os horários.\n\n*FBZ Barbearia*"
 }
 ```
 
@@ -526,7 +526,7 @@ Para comandos não reconhecidos:
 Body:
 {
   "number": "{{ $('Code').item.json.telefone }}",
-  "text": "👋 Olá!\n\n📋 *Comandos disponíveis:*\n\n• *HOJE* - Ver seus agendamentos de hoje\n• *SEMANA* - Ver agendamentos da semana\n• *FATURAMENTO* - Ver faturamento do mês\n\nDigite um dos comandos acima! 😊\n\n*Vinci Barbearia - Portal do Barbeiro*"
+  "text": "👋 Olá!\n\n📋 *Comandos disponíveis:*\n\n• *HOJE* - Ver seus agendamentos de hoje\n• *SEMANA* - Ver agendamentos da semana\n• *FATURAMENTO* - Ver faturamento do mês\n\nDigite um dos comandos acima! 😊\n\n*FBZ Barbearia - Portal do Barbeiro*"
 }
 ```
 
@@ -703,7 +703,7 @@ if (resultado.success) {
   return {
     json: {
       telefone: $('Code1').item.json.telefone,
-      mensagem: `✅ *Agendamento Cancelado!*\n\n📅 Data: ${$('Code2').item.json.data}\n⏰ Horário: ${$('Code2').item.json.hora}\n💈 Barbeiro: ${$('Code2').item.json.barbeiro}\n\nSeu horário foi liberado.\n\nPara agendar novamente, entre em contato! 📲\n\n*Vinci Barbearia*`
+      mensagem: `✅ *Agendamento Cancelado!*\n\n📅 Data: ${$('Code2').item.json.data}\n⏰ Horário: ${$('Code2').item.json.hora}\n💈 Barbeiro: ${$('Code2').item.json.barbeiro}\n\nSeu horário foi liberado.\n\nPara agendar novamente, entre em contato! 📲\n\n*FBZ Barbearia*`
     }
   };
 } else {
@@ -766,7 +766,7 @@ Olá João Silva! 👋
 💈 Barbeiro: Hiago
 💰 Valor: R$ 95,00
 
-📍 Vinci Barbearia
+📍 FBZ Barbearia
 Nos vemos em breve! 😊
 ```
 
@@ -821,7 +821,7 @@ Seu horário foi liberado.
 
 Para agendar novamente, entre em contato! 📲
 
-Vinci Barbearia
+FBZ Barbearia
 ```
 
 ---

@@ -93,7 +93,7 @@ Resultado: Filippe (menos agendamentos)
 
 ### Teste 1: Criar primeiro agendamento
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Rodizio 1",
@@ -112,7 +112,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 
 ### Teste 2: Criar segundo agendamento
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Rodizio 2",
@@ -131,7 +131,7 @@ curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
 
 ### Teste 3: Criar terceiro agendamento
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/agendamentos/criar \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/agendamentos/criar \
   -H "Content-Type: application/json" \
   -d '{
     "cliente_nome": "Teste Rodizio 3",

@@ -1,6 +1,6 @@
 -- =====================================================
 -- CONFIGURAÇÃO DE RLS (Row Level Security) - SUPABASE
--- VINCI BARBEARIA
+-- FBZ Barbearia
 -- =====================================================
 --
 -- Execute este script no SQL Editor do Supabase

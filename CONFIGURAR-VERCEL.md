@@ -76,7 +76,7 @@ Vercel Dashboard
 
 Após o rebuild, acesse:
 ```
-https://barbearia.vercel.app
+https://fbzbarbearia.vercel.app
 ```
 
 Se aparecer o site, **funcionou!** 🎉
@@ -115,7 +115,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9ucmRwZmN
 ## 🚀 Após Configurar
 
 1. Rebuild o deployment na Vercel
-2. Teste o site: https://barbearia.vercel.app
+2. Teste o site: https://fbzbarbearia.vercel.app
 3. Execute o SQL no Supabase (SQL-COMPLETO-BARBEARIA.sql)
 4. Teste fazer login
 

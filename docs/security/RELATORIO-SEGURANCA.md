@@ -1,4 +1,4 @@
-# 🔒 Relatório de Segurança - Vinci Barbearia
+# 🔒 Relatório de Segurança - FBZ Barbearia
 
 **Data:** 08/01/2026
 **Versão:** 1.0
@@ -305,7 +305,7 @@ Atualize em:
 ## 📞 CONTATO E SUPORTE
 
 Para reportar vulnerabilidades de segurança:
-- **Email:** seguranca@vincibarbearia.com (se aplicável)
+- **Email:** seguranca@fbzbarbearia.com (se aplicável)
 - **Interno:** Falar com o desenvolvedor responsável
 
 **Política de Divulgação Responsável:**

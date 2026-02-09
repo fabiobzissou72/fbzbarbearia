@@ -3,7 +3,7 @@
 ## ✅ O Que Já Foi Feito
 
 1. **Nome do projeto**: "vince-barbearia" → "barbearia"
-2. **Domínio**: vincebarbearia.vercel.app → barbearia.vercel.app
+2. **Domínio**: vincefbzbarbearia.vercel.app → fbzbarbearia.vercel.app
 3. **Logo**: Substituído (imagem/logo.jpg → public/logo.png)
 4. **Branding**: Todos os textos "Vince" removidos
 5. **Supabase**: Novas credenciais configuradas
@@ -95,7 +95,7 @@ O arquivo `SQL-COMPLETO-BARBEARIA.sql` cria:
 
 Após o deploy, seu app estará em:
 ```
-https://barbearia.vercel.app
+https://fbzbarbearia.vercel.app
 ```
 
 ---
@@ -108,7 +108,7 @@ https://barbearia.vercel.app
 - [ ] App funciona localmente
 - [ ] Deploy feito na Vercel
 - [ ] Variáveis de ambiente configuradas
-- [ ] App acessível em barbearia.vercel.app
+- [ ] App acessível em fbzbarbearia.vercel.app
 
 ---
 

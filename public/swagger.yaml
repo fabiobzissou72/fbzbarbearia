@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Vinci Barbearia API
+  title: FBZ Barbearia API
   description: |
     API completa para gerenciamento de barbearia incluindo agendamentos, barbeiros, clientes, produtos, planos e webhooks.
 
@@ -21,11 +21,11 @@ info:
 
   version: 3.0.0
   contact:
-    name: Vinci Barbearia
-    url: https://barbearia.vercel.app
+    name: FBZ Barbearia
+    url: https://fbzbarbearia.vercel.app
 
 servers:
-  - url: https://barbearia.vercel.app/api
+  - url: https://fbzbarbearia.vercel.app/api
     description: Produção
   - url: http://localhost:3000/api
     description: Desenvolvimento
@@ -205,7 +205,7 @@ paths:
 
         **Exemplo de uso:**
         ```bash
-        curl -X POST 'https://barbearia.vercel.app/api/agendamentos/criar' \
+        curl -X POST 'https://fbzbarbearia.vercel.app/api/agendamentos/criar' \
           -H 'Authorization: Bearer SEU_TOKEN' \
           -H 'Content-Type: application/json' \
           -d '{
@@ -347,7 +347,7 @@ paths:
 
         **Exemplo de uso:**
         ```bash
-        curl -X GET 'https://barbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&barbeiro=Hiago'
+        curl -X GET 'https://fbzbarbearia.vercel.app/api/agendamentos/horarios-disponiveis?data=2025-12-20&barbeiro=Hiago'
         ```
       parameters:
         - name: data
@@ -417,7 +417,7 @@ paths:
 
         **Exemplo de uso:**
         ```bash
-        curl -X DELETE 'https://barbearia.vercel.app/api/agendamentos/cancelar' \
+        curl -X DELETE 'https://fbzbarbearia.vercel.app/api/agendamentos/cancelar' \
           -H 'Authorization: Bearer SEU_TOKEN' \
           -H 'Content-Type: application/json' \
           -d '{
@@ -747,7 +747,7 @@ paths:
 
         **Exemplo de uso:**
         ```bash
-        curl -X GET 'https://barbearia.vercel.app/api/barbeiros/agendamentos-hoje?telefone=5511999999999'
+        curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiros/agendamentos-hoje?telefone=5511999999999'
         ```
       parameters:
         - name: telefone
@@ -788,11 +788,11 @@ paths:
         **Exemplo de uso:**
         ```bash
         # Agendamentos de hoje
-        curl -X GET 'https://barbearia.vercel.app/api/barbeiro/agendamentos?barbeiro=Hiago&quando=hoje' \
+        curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiro/agendamentos?barbeiro=Hiago&quando=hoje' \
           -H 'Authorization: Bearer SEU_TOKEN'
 
         # Próxima terça-feira
-        curl -X GET 'https://barbearia.vercel.app/api/barbeiro/agendamentos?barbeiro=Hiago&quando=terca' \
+        curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiro/agendamentos?barbeiro=Hiago&quando=terca' \
           -H 'Authorization: Bearer SEU_TOKEN'
         ```
 
@@ -962,7 +962,7 @@ paths:
 
         **Exemplo de uso:**
         ```bash
-        curl -X GET 'https://barbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=hoje' \
+        curl -X GET 'https://fbzbarbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=hoje' \
           -H 'Authorization: Bearer SEU_TOKEN'
         ```
       security:
@@ -1133,12 +1133,12 @@ paths:
         **Exemplo de uso:**
         ```bash
         # Forma 1 - Com ID
-        curl -X POST 'https://barbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
+        curl -X POST 'https://fbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
           -H 'Content-Type: application/json' \
           -d '{"agendamento_id": "abc123-uuid"}'
 
         # Forma 2 - Com nome e hora
-        curl -X POST 'https://barbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
+        curl -X POST 'https://fbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento' \
           -H 'Content-Type: application/json' \
           -d '{
             "barbeiro_nome": "Hiago",
@@ -1433,7 +1433,7 @@ paths:
         **Casos de uso por IA:**
         ```bash
         # Deletar lead frio por ID
-        curl -X DELETE 'https://barbearia.vercel.app/api/clientes/deletar' \
+        curl -X DELETE 'https://fbzbarbearia.vercel.app/api/clientes/deletar' \
           -H 'Authorization: Bearer SEU_TOKEN' \
           -H 'Content-Type: application/json' \
           -d '{
@@ -1441,7 +1441,7 @@ paths:
           }'
 
         # Deletar lead frio por telefone
-        curl -X DELETE 'https://barbearia.vercel.app/api/clientes/deletar' \
+        curl -X DELETE 'https://fbzbarbearia.vercel.app/api/clientes/deletar' \
           -H 'Authorization: Bearer SEU_TOKEN' \
           -H 'Content-Type: application/json' \
           -d '{
@@ -1608,14 +1608,14 @@ paths:
 
         **Exemplo com HEADER (recomendado para N8N):**
         ```bash
-        curl -X GET 'https://barbearia.vercel.app/api/clientes/meus-agendamentos' \
+        curl -X GET 'https://fbzbarbearia.vercel.app/api/clientes/meus-agendamentos' \
           -H 'Authorization: Bearer SEU_TOKEN' \
           -H 'telefone: 11970307000'
         ```
 
         **Exemplo com QUERY:**
         ```bash
-        curl -X GET 'https://barbearia.vercel.app/api/clientes/meus-agendamentos?telefone=11970307000' \
+        curl -X GET 'https://fbzbarbearia.vercel.app/api/clientes/meus-agendamentos?telefone=11970307000' \
           -H 'Authorization: Bearer SEU_TOKEN'
         ```
       security:

@@ -1,4 +1,4 @@
-# 📚 Documentação Completa da API - Vinci Barbearia
+# 📚 Documentação Completa da API - FBZ Barbearia
 
 ## 📋 Índice
 1. [Agendamentos](#agendamentos)
@@ -668,7 +668,7 @@ curl -X DELETE http://localhost:3000/api/agendamentos/cancelar \
 
 #### Exemplo CURL:
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/clientes/enviar-senha-temporaria \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/clientes/enviar-senha-temporaria \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_API" \
   -d '{
@@ -753,7 +753,7 @@ A API não requer autenticação para a maioria dos endpoints. Para produção, 
 ## 📞 SUPORTE
 
 Para dúvidas ou problemas, entre em contato:
-- Email: suporte@vincibarbearia.com
+- Email: suporte@fbzbarbearia.com
 - WhatsApp: (11) 99999-9999
 
 ---

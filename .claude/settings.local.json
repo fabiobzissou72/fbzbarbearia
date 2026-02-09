@@ -14,7 +14,7 @@
       "Bash(then rm package-lock.json)",
       "Bash(else echo \"package-lock.json não existe\")",
       "Bash(fi)",
-      "WebFetch(domain:vincibarbearia.vercel.app)",
+      "WebFetch(domain:fbzbarbearia.vercel.app)",
       "Bash(npm install:*)",
       "Bash(node scripts/generate-icons.js:*)",
       "Bash(curl:*)",
@@ -31,7 +31,8 @@
       "Bash(copy:*)",
       "Bash(find:*)",
       "Bash(xargs sed:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(powershell:*)"
     ]
   }
 }

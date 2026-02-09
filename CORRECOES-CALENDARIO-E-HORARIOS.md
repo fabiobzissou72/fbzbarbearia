@@ -37,7 +37,7 @@
 
 **cURL para testar:**
 ```bash
-curl https://vincibarbearia.vercel.app/api/barbeiros/horarios
+curl https://vincifbzbarbearia.vercel.app/api/barbeiros/horarios
 ```
 
 **Resposta:**
@@ -141,7 +141,7 @@ curl https://vincibarbearia.vercel.app/api/barbeiros/horarios
 ## 🧪 TESTES
 
 ### Teste 1: Clicar no "+X mais"
-1. Abra: https://vincibarbearia.vercel.app/dashboard/agendamentos
+1. Abra: https://vincifbzbarbearia.vercel.app/dashboard/agendamentos
 2. Clique no botão **"Calendário"**
 3. Procure um dia com mais de 3 agendamentos (mostra "+1 mais", "+2 mais", etc)
 4. **Clique no "+X mais"**
@@ -153,7 +153,7 @@ curl https://vincibarbearia.vercel.app/api/barbeiros/horarios
 
 ### Teste 2: API de horários
 ```bash
-curl https://vincibarbearia.vercel.app/api/barbeiros/horarios
+curl https://vincifbzbarbearia.vercel.app/api/barbeiros/horarios
 ```
 
 **Verifique:**
@@ -192,14 +192,14 @@ curl https://vincibarbearia.vercel.app/api/barbeiros/horarios
 
 ```bash
 # Buscar horários de todos os barbeiros HOJE
-curl https://vincibarbearia.vercel.app/api/barbeiros/horarios
+curl https://vincifbzbarbearia.vercel.app/api/barbeiros/horarios
 ```
 
 **Exemplo de uso no N8N:**
 ```json
 {
   "method": "GET",
-  "url": "https://vincibarbearia.vercel.app/api/barbeiros/horarios"
+  "url": "https://vincifbzbarbearia.vercel.app/api/barbeiros/horarios"
 }
 ```
 

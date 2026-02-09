@@ -1,4 +1,4 @@
-# ✅ Sistema Completo de Agendamentos - Vinci Barbearia
+# ✅ Sistema Completo de Agendamentos - FBZ Barbearia
 
 ## 🎉 TUDO IMPLEMENTADO E FUNCIONANDO!
 

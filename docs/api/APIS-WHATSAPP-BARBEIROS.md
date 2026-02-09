@@ -29,17 +29,17 @@ GET /api/barbeiros/meus-agendamentos
 
 ### cURL - Agendamentos de HOJE:
 ```bash
-curl "https://vincibarbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=hoje"
+curl "https://vincifbzbarbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=hoje"
 ```
 
 ### cURL - Agendamentos da SEMANA:
 ```bash
-curl "https://vincibarbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=semana"
+curl "https://vincifbzbarbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=semana"
 ```
 
 ### cURL - Agendamentos do MÊS:
 ```bash
-curl "https://vincibarbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=mes"
+curl "https://vincifbzbarbearia.vercel.app/api/barbeiros/meus-agendamentos?barbeiro_nome=Hiago&periodo=mes"
 ```
 
 ### Resposta:
@@ -105,17 +105,17 @@ GET /api/barbeiros/meu-faturamento
 
 ### cURL - Faturamento de HOJE:
 ```bash
-curl "https://vincibarbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=hoje"
+curl "https://vincifbzbarbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=hoje"
 ```
 
 ### cURL - Faturamento da SEMANA:
 ```bash
-curl "https://vincibarbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=semana"
+curl "https://vincifbzbarbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=semana"
 ```
 
 ### cURL - Faturamento do MÊS:
 ```bash
-curl "https://vincibarbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=mes"
+curl "https://vincifbzbarbearia.vercel.app/api/barbeiros/meu-faturamento?barbeiro_nome=Hiago&periodo=mes"
 ```
 
 ### Resposta:
@@ -176,7 +176,7 @@ POST /api/barbeiros/cancelar-meu-agendamento
 
 ### cURL - Cancelar agendamento:
 ```bash
-curl -X POST https://vincibarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento \
+curl -X POST https://vincifbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento \
   -H "Content-Type: application/json" \
   -d '{
     "barbeiro_nome": "Hiago",
@@ -380,7 +380,7 @@ O cliente será notificado sobre o cancelamento.
 ```json
 {
   "method": "GET",
-  "url": "https://vincibarbearia.vercel.app/api/barbeiros/meus-agendamentos",
+  "url": "https://vincifbzbarbearia.vercel.app/api/barbeiros/meus-agendamentos",
   "qs": {
     "barbeiro_nome": "{{ $json.barbeiro }}",
     "periodo": "{{ $json.periodo }}"
@@ -392,7 +392,7 @@ O cliente será notificado sobre o cancelamento.
 ```json
 {
   "method": "GET",
-  "url": "https://vincibarbearia.vercel.app/api/barbeiros/meu-faturamento",
+  "url": "https://vincifbzbarbearia.vercel.app/api/barbeiros/meu-faturamento",
   "qs": {
     "barbeiro_nome": "{{ $json.barbeiro }}",
     "periodo": "{{ $json.periodo }}"
@@ -404,7 +404,7 @@ O cliente será notificado sobre o cancelamento.
 ```json
 {
   "method": "POST",
-  "url": "https://vincibarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento",
+  "url": "https://vincifbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento",
   "body": {
     "barbeiro_nome": "{{ $json.barbeiro }}",
     "cliente_nome": "{{ $json.cliente }}",

@@ -48,7 +48,7 @@ Minutes: 0
 
 **Exemplo de URL:**
 ```
-https://vincibarbearia.vercel.app/api/cron/lembretes
+https://vincifbzbarbearia.vercel.app/api/cron/lembretes
 ```
 
 **Authentication**: None (ou configure Bearer Token se quiser segurança)
@@ -112,7 +112,7 @@ https://vincibarbearia.vercel.app/api/cron/lembretes
     },
     {
       "parameters": {
-        "url": "https://vincibarbearia.vercel.app/api/cron/lembretes",
+        "url": "https://vincifbzbarbearia.vercel.app/api/cron/lembretes",
         "options": {}
       },
       "name": "Chamar API Lembretes",

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Substituir localhost pela URL correta
-sed -i 's|http://localhost:3000|https://barbearia.vercel.app|g' API_DOCUMENTATION.md
+sed -i 's|http://localhost:3000|https://fbzbarbearia.vercel.app|g' API_DOCUMENTATION.md
 
 # Agora adicionar Authorization em todos os curls que não têm
 python3 << 'PYTHON'

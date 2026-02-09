@@ -437,7 +437,7 @@ return { json: dados };
 Adicione link direto para reagendar:
 
 ```javascript
-const linkReagendar = `https://vincibarbearia.com.br/agendar?barbeiro=${barbeiro}`;
+const linkReagendar = `https://fbzbarbearia.com.br/agendar?barbeiro=${barbeiro}`;
 
 const mensagem = `❌ *Cancelamento*\n\n` +
   `Seu agendamento de ${data} às ${hora} foi cancelado.\n\n` +

@@ -16,7 +16,7 @@ Todas as referências ao projeto "Vince" foram removidas e substituídas por "Ba
 - ✅ `public/logo.png` - Logo substituído (copiado da pasta `imagem/`)
 
 ### 3. **Domínio e Documentação**
-- ✅ Todas as referências de `vincebarbearia.vercel.app` → `barbearia.vercel.app`
+- ✅ Todas as referências de `vincefbzbarbearia.vercel.app` → `fbzbarbearia.vercel.app`
 - ✅ Atualizado em todos os arquivos `.md`, `.yaml`, `.sh`, `.py`
 
 ### 4. **Banco de Dados**
@@ -129,7 +129,7 @@ vercel --prod
 ### Domínio Esperado
 Após o deploy, seu app estará disponível em:
 ```
-https://barbearia.vercel.app
+https://fbzbarbearia.vercel.app
 ```
 
 ---
@@ -304,7 +304,7 @@ Se precisar de ajuda:
 ## ✨ Resumo
 
 - ✅ Nome do projeto: **Barbearia**
-- ✅ Domínio: **barbearia.vercel.app**
+- ✅ Domínio: **fbzbarbearia.vercel.app**
 - ✅ Supabase URL: **https://onrdpfcjbmkfpjfqydnk.supabase.co**
 - ✅ SQL completo: **SQL-COMPLETO-BARBEARIA.sql**
 - ✅ Logo atualizado

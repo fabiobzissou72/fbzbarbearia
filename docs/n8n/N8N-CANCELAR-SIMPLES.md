@@ -19,7 +19,7 @@ Forma mais simples de cancelar agendamentos usando o ID retornado pela API de co
 **HTTP Request:**
 ```
 Método: GET
-URL: https://vincibarbearia.vercel.app/api/barbeiro/agendamentos?barbeiro={{ barbeiro_id }}&quando=hoje
+URL: https://vincifbzbarbearia.vercel.app/api/barbeiro/agendamentos?barbeiro={{ barbeiro_id }}&quando=hoje
 Headers:
   Authorization: Bearer SEU_TOKEN
 ```
@@ -157,7 +157,7 @@ return {
 **HTTP Request:**
 ```
 Método: POST
-URL: https://vincibarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
+URL: https://vincifbzbarbearia.vercel.app/api/barbeiros/cancelar-meu-agendamento
 Headers:
   Content-Type: application/json
 Body:

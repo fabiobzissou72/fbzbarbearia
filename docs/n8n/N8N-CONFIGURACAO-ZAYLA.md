@@ -17,7 +17,7 @@
 
 1. **BASE_URL**
    ```
-   https://vincibarbearia.vercel.app
+   https://vincifbzbarbearia.vercel.app
    ```
 
 2. **API_TOKEN**
