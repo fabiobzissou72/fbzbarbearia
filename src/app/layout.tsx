@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Barbearia - Dashboard",
+  title: "FBZ Barbearia - Dashboard",
   description: "Sistema completo de gestão para barbearias",
   icons: {
     icon: "/favicon.ico",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Barbearia",
+    title: "FBZ Barbearia",
   },
 };
 

@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@supabase/supabase-js'
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
+import { supabase } from '@/lib/supabase'
+import { verificarAutenticacao } from '@/lib/auth'
 
 /**
  * GET /api/barbeiros/listar
@@ -20,6 +16,18 @@ const supabase = createClient(
  */
 export async function GET(request: NextRequest) {
   try {
+    // 🔐 AUTENTICAÇÃO (permite requisições internas do dashboard sem token)
+    const { autorizado, erro } = await verificarAutenticacao(request)
+    if (!autorizado) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'Não autorizado',
+          error: erro || 'Acesso negado'
+        },
+        { status: 401 }
+      )
+    }
     const { searchParams } = new URL(request.url)
     const ativoParam = searchParams.get('ativo')
 

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
-import { extrairTokenDaRequest, verificarTokenAPI } from '@/lib/auth'
+import { verificarAutenticacao } from '@/lib/auth'
 
 export const dynamic = 'force-dynamic'
 
@@ -14,21 +14,14 @@ export const dynamic = 'force-dynamic'
  */
 export async function GET(request: NextRequest) {
   try {
-    // 🔐 AUTENTICAÇÃO OBRIGATÓRIA
-    const token = extrairTokenDaRequest(request)
-    if (!token) {
+    // 🔐 AUTENTICAÇÃO (permite requisições internas do dashboard sem token)
+    const { autorizado, erro } = await verificarAutenticacao(request)
+    if (!autorizado) {
       return NextResponse.json({
         success: false,
-        message: 'Token de autorização não fornecido. Use: Authorization: Bearer SEU_TOKEN'
+        message: 'Não autorizado',
+        error: erro || 'Acesso negado'
       }, { status: 401 })
-    }
-
-    const { valido, erro } = await verificarTokenAPI(token)
-    if (!valido) {
-      return NextResponse.json({
-        success: false,
-        message: erro || 'Token de autorização inválido'
-      }, { status: 403 })
     }
 
     // Obter data de hoje no timezone de Brasília

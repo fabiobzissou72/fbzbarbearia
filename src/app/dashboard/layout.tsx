@@ -85,7 +85,7 @@ export default function DashboardLayout({
             </div>
             {sidebarOpen && (
               <div>
-                <h1 className="text-white font-bold text-lg">Barbearia</h1>
+                <h1 className="text-white font-bold text-lg">FBZ Barbearia</h1>
                 <p className="text-cyan-400 text-sm">Sistema de Gestão</p>
                 <p className="text-slate-400 text-xs">Dashboard</p>
               </div>
@@ -120,7 +120,7 @@ export default function DashboardLayout({
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-white text-sm font-medium truncate">{user?.nome || 'Admin'}</p>
-                    <p className="text-slate-400 text-xs">Barbearia</p>
+                    <p className="text-slate-400 text-xs">FBZ Barbearia</p>
                   </div>
                 </div>
                 <button

@@ -300,7 +300,7 @@ export async function getProfissionais(): Promise<Profissional[]> {
  */
 export function gerarTokenAPI(): string {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-  let token = 'vinci_'
+  let token = 'fbzbarbearia_'
   for (let i = 0; i < 64; i++) {
     token += chars.charAt(Math.floor(Math.random() * chars.length))
   }
@@ -379,8 +379,8 @@ export function isRequisicaoInterna(request: Request): boolean {
   const dominiosConfiaveis = [
     'localhost',
     '127.0.0.1',
-    'barbearia.vercel.app',
-    'barbearia.com.br'
+    'fbzbarbearia.vercel.app',
+    'fbzbarbearia.com.br'
   ]
 
   // Verificar se o host está na lista de domínios confiáveis

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
-import { extrairTokenDaRequest, verificarTokenAPI } from '@/lib/auth'
+import { verificarAutenticacao } from '@/lib/auth'
 
 export const dynamic = 'force-dynamic'
 
@@ -21,21 +21,14 @@ export const dynamic = 'force-dynamic'
  */
 export async function POST(request: NextRequest) {
   try {
-    // 🔐 AUTENTICAÇÃO
-    const token = extrairTokenDaRequest(request)
-    if (!token) {
+    // 🔐 AUTENTICAÇÃO (permite requisições internas do dashboard sem token)
+    const { autorizado, erro } = await verificarAutenticacao(request)
+    if (!autorizado) {
       return NextResponse.json({
         success: false,
-        error: 'Token de autorização não fornecido. Use: Authorization: Bearer SEU_TOKEN'
+        message: 'Não autorizado',
+        error: erro || 'Acesso negado'
       }, { status: 401 })
-    }
-
-    const { valido, erro } = await verificarTokenAPI(token)
-    if (!valido) {
-      return NextResponse.json({
-        success: false,
-        error: erro
-      }, { status: 403 })
     }
 
     const body = await request.json()
